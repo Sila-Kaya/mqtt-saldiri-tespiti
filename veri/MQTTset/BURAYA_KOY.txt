@@ -1,0 +1,1 @@
+MQTTset CSV dosyalarını (ör. train70_reduced.csv ve test30_reduced.csv) bu klasöre yerleştirin. Augmented sürümlerini kullanmayın.
