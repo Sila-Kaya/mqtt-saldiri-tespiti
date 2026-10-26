@@ -14,14 +14,33 @@ Sonunda `sonuclar/rapor.md` dosyasına tüm tabloları içeren bir rapor yazar.
 
 ## 1. Kurulum
 
+Projeyi bilgisayarınıza indirin:
+
 ```bash
-cd ~/Desktop/mqtt-saldiri-tespiti
-python3.14 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+git clone https://github.com/Sila-Kaya/mqtt-saldiri-tespiti.git
+cd mqtt-saldiri-tespiti
 ```
 
-Bilgisayarındaki varsayılan `python3` sürümü 3.15 ve pandas/scikit-learn bu sürüme henüz kurulamayabilir. Bu yüzden `python3.14` kullan; bu sürümle test edildi.
+### Windows 10/11
+
+Komut İstemi (CMD) üzerinden:
+
+```bat
+py -3.14 -m venv .venv
+.venv\Scripts\activate.bat
+python -m pip install -r requirements.txt
+```
+
+### Linux / macOS
+
+```bash
+python3.14 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+**Not:** Proje Python 3.14 ile test edilmiştir.
+Gerekli kütüphaneler requirements.txt dosyasında listelenmiştir.
 
 ## 2. Veri setlerini indir
 
