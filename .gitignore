@@ -1,0 +1,28 @@
+# Python sanal ortamı, önbellek ve geçici dosyalar
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Gizli ortam değişkenleri / yerel ayarlar
+.env
+.env.*
+!.env.example
+*.log
+
+# IoT/MQTT veri setleri: yalnızca açıklama dosyaları repoda tutulur
+/veri/MQTTEEB-D/*
+!/veri/MQTTEEB-D/BURAYA_KOY.txt
+/veri/MQTTset/*
+!/veri/MQTTset/BURAYA_KOY.txt
+
+# Deneylerden otomatik üretilen sonuçlar (istersen seçili raporları ayrıca ekleyebilirsin)
+/sonuclar/
+
+# IDE ve işletim sistemi
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
