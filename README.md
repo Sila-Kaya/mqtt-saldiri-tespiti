@@ -57,10 +57,9 @@ Gerekli kütüphaneler requirements.txt dosyasında listelenmiştir.
 ## 3. Önce ortak özelliklere bak
 
 ```bash
-python mqtt_deneyler.py \
-  --a veri/MQTTEEB-D/DOSYA_ADI.csv \
-  --b veri/MQTTset/train70_reduced.csv veri/MQTTset/test30_reduced.csv \
-  --sadece-ozellikler
+
+python mqtt_deneyler.py --a veri/MQTTEEB-D/DOSYA_ADI.csv --b veri/MQTTset/train70_reduced.csv veri/MQTTset/test30_reduced.csv --sadece-ozellikler
+
 ```
 
 Konsolda iki şeyi kontrol et:
@@ -75,15 +74,17 @@ Aynı alan iki veri setinde farklı adla geçiyorsa eşle, örneğin `--esle mqt
 Önce hızlı bir deneme yap (sınıf başına 20.000 satır, 50 ağaç):
 
 ```bash
-python mqtt_deneyler.py --a veri/MQTTEEB-D/DOSYA_ADI.csv \
-  --b veri/MQTTset/train70_reduced.csv veri/MQTTset/test30_reduced.csv --hizli
+
+python mqtt_deneyler.py --a veri/MQTTEEB-D/DOSYA_ADI.csv --b veri/MQTTset/train70_reduced.csv veri/MQTTset/test30_reduced.csv --hizli
+
 ```
 
 Sonra asıl çalıştırmayı yap. Varsayılan ayar sınıf başına 50.000 satır ve 100 ağaçtır; tüm veri için `--sinif-basina-max 0` ver:
 
 ```bash
-python mqtt_deneyler.py --a veri/MQTTEEB-D/DOSYA_ADI.csv \
-  --b veri/MQTTset/train70_reduced.csv veri/MQTTset/test30_reduced.csv
+
+python mqtt_deneyler.py --a veri/MQTTEEB-D/DOSYA_ADI.csv --b veri/MQTTset/train70_reduced.csv veri/MQTTset/test30_reduced.csv
+
 ```
 
 Süre makineye ve satır sayısına göre birkaç dakikadan yarım saate kadar değişebilir.
